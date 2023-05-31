@@ -1,0 +1,142 @@
+nav {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+
+  .responsive-navbar {
+    display: none;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .pages_responsive {
+       
+        &:hover {
+          .pages-elements {
+            display: block;
+          }
+        }
+      }
+      li {
+        .pages-elements {
+          display: none;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      margin-left: 20px;
+    }
+  }
+
+  .web-about {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(229, 229, 229);
+
+    .basket-menu {
+      display: none;
+      cursor: pointer;
+    }
+
+    .help-people {
+      width: 200px;
+      color: black;
+    }
+
+    .phone-number {
+      display: flex;
+      align-items: center;
+      i {
+        background-color: red;
+        font-size: 18px;
+        padding: 33px;
+        margin-left: 10px;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .navbar-nav {
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      gap: 10px;
+      .home {
+        color: red;
+      }
+
+      li {
+        a {
+          font-size: 12px;
+          text-decoration: none;
+          color: black;
+
+          &:hover {
+            color: red;
+          }
+        }
+      }
+
+      .page {
+        .generic-elements {
+          display: flex;
+          flex-direction: column;
+          display: none;
+          padding: 10px;
+          position: absolute;
+          background-color: white;
+        }
+
+        &:hover {
+          color: red;
+
+          .generic-elements {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.responsive_design {
+  display: block !important;
+  position: absolute;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  
+  width: 50%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    .navbar-nav {
+      display: none;
+    }
+    .web-about {
+      border-bottom: 0px;
+      margin-top: 5px;
+
+      .phone-number {
+        display: none;
+      }
+      .help-people {
+        display: none;
+      }
+      .basket-menu {
+        display: block;
+      }
+    }
+  }
+}

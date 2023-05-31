@@ -1,0 +1,181 @@
+.fitness-depends {
+  background-image: url("https://preview.colorlib.com/theme/gym/img/header-bg.jpg.webp");
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  margin: auto;
+  text-align: center;
+
+  .real-fitness {
+    padding-top: 200px;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+  }
+  p {
+    padding-bottom: 220px;
+    padding-top: 20px;
+    color: white;
+    font-size: 14px;
+  }
+}
+
+.offer-about {
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 100px;
+  h2 {
+    font-size: 36px;
+  }
+  p {
+    color: #777777;
+    margin-bottom: 100px;
+  }
+  .we-care {
+    text-align: center;
+    .card-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 100px;
+      .box-regular {
+        .regular-exercise {
+          box-shadow: 0px 20px 60px 0px rgba(246, 33, 75, 0.3);
+          padding: 40px 30px 30px 30px;
+
+          h4 {
+            font-size: 18px;
+          }
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+.courses-student {
+  max-width: 1440px;
+  margin: auto;
+  .top-courses {
+    text-align: center;
+    h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #777777;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.courses-student {
+  .courses-boxes {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    .course-box {
+      display: flex;
+      .running-classes {
+        display: flex;
+        justify-content: space-between;
+        p {
+          color: #f6214b;
+          font-weight: bolder;
+        }
+      }
+      .running-course {
+        .first-course {
+          .avilable {
+            position: absolute;
+            z-index: 2;
+            background-color: #f6214b;
+            color: black;
+            margin-top: 150px;
+            padding: 10px 40px;
+            margin-left: 20px;
+          }
+          .run-image {
+            position: relative;
+            max-width: 100%;
+
+            &:hover {
+              transform: scale(1.2);
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.transaction-week {
+  max-width: 1440px;
+  margin: auto;
+  background-image: url("https://preview.colorlib.com/theme/gym/img/callto-bg.jpg.webp");
+  background-size: 100%;
+  background-size: cover;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  h2 {
+    color: white;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  p {
+    color: white;
+    padding-bottom: 100px;
+  }
+  button {
+    border: none;
+    border-radius: 30px;
+    background-color: #f6214b;
+    padding: 10px;
+    margin-bottom: 100px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offer-about {
+    .we-care {
+      .card-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .courses-student {
+    .top-courses {
+      h2 {
+        font-size: 30px;
+      }
+    }
+    .courses-boxes {
+      display: grid;
+      grid-template-columns: auto;
+      .course-box {
+        .running-course {
+          .first-course {
+            .avilable {
+              padding: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

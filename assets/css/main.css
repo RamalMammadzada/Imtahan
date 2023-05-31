@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+}
+nav .responsive-navbar {
+  display: none;
+}
+nav .responsive-navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+nav .responsive-navbar ul .pages_responsive:hover .pages-elements {
+  display: block;
+}
+nav .responsive-navbar ul li .pages-elements {
+  display: none;
+}
+nav .responsive-navbar a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+nav .web-about {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+nav .web-about .basket-menu {
+  display: none;
+  cursor: pointer;
+}
+nav .web-about .help-people {
+  width: 200px;
+  color: black;
+}
+nav .web-about .phone-number {
+  display: flex;
+  align-items: center;
+}
+nav .web-about .phone-number i {
+  background-color: red;
+  font-size: 18px;
+  padding: 33px;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+}
+nav .navbar-nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  gap: 10px;
+}
+nav .navbar-nav ul .home {
+  color: red;
+}
+nav .navbar-nav ul li a {
+  font-size: 12px;
+  text-decoration: none;
+  color: black;
+}
+nav .navbar-nav ul li a:hover {
+  color: red;
+}
+nav .navbar-nav ul .page .generic-elements {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  padding: 10px;
+  position: absolute;
+  background-color: white;
+}
+nav .navbar-nav ul .page:hover {
+  color: red;
+}
+nav .navbar-nav ul .page:hover .generic-elements {
+  display: block;
+}
+
+.responsive_design {
+  display: block !important;
+  position: absolute;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  width: 50%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  nav .navbar-nav {
+    display: none;
+  }
+  nav .web-about {
+    border-bottom: 0px;
+    margin-top: 5px;
+  }
+  nav .web-about .phone-number {
+    display: none;
+  }
+  nav .web-about .help-people {
+    display: none;
+  }
+  nav .web-about .basket-menu {
+    display: block;
+  }
+}
+.fitness-depends {
+  background-image: url("https://preview.colorlib.com/theme/gym/img/header-bg.jpg.webp");
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  margin: auto;
+  text-align: center;
+}
+.fitness-depends .real-fitness {
+  padding-top: 200px;
+}
+.fitness-depends h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+}
+.fitness-depends p {
+  padding-bottom: 220px;
+  padding-top: 20px;
+  color: white;
+  font-size: 14px;
+}
+
+.offer-about {
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 100px;
+}
+.offer-about h2 {
+  font-size: 36px;
+}
+.offer-about p {
+  color: #777777;
+  margin-bottom: 100px;
+}
+.offer-about .we-care {
+  text-align: center;
+}
+.offer-about .we-care .card-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+.offer-about .we-care .card-box .box-regular .regular-exercise {
+  box-shadow: 0px 20px 60px 0px rgba(246, 33, 75, 0.3);
+  padding: 40px 30px 30px 30px;
+  border-radius: 8px;
+}
+.offer-about .we-care .card-box .box-regular .regular-exercise h4 {
+  font-size: 18px;
+}
+
+.courses-student {
+  max-width: 1440px;
+  margin: auto;
+}
+.courses-student .top-courses {
+  text-align: center;
+}
+.courses-student .top-courses h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.courses-student .top-courses p {
+  color: #777777;
+  margin-bottom: 100px;
+}
+
+.courses-student .courses-boxes {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+}
+.courses-student .courses-boxes .course-box {
+  display: flex;
+}
+.courses-student .courses-boxes .course-box .running-classes {
+  display: flex;
+  justify-content: space-between;
+}
+.courses-student .courses-boxes .course-box .running-classes p {
+  color: #f6214b;
+  font-weight: bolder;
+}
+.courses-student .courses-boxes .course-box .running-course .first-course .avilable {
+  position: absolute;
+  z-index: 2;
+  background-color: #f6214b;
+  color: black;
+  margin-top: 150px;
+  padding: 10px 40px;
+  margin-left: 20px;
+}
+.courses-student .courses-boxes .course-box .running-course .first-course .run-image {
+  position: relative;
+  max-width: 100%;
+}
+.courses-student .courses-boxes .course-box .running-course .first-course .run-image:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+}
+
+.transaction-week {
+  max-width: 1440px;
+  margin: auto;
+  background-image: url("https://preview.colorlib.com/theme/gym/img/callto-bg.jpg.webp");
+  background-size: 100%;
+  background-size: cover;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.transaction-week h2 {
+  color: white;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.transaction-week p {
+  color: white;
+  padding-bottom: 100px;
+}
+.transaction-week button {
+  border: none;
+  border-radius: 30px;
+  background-color: #f6214b;
+  padding: 10px;
+  margin-bottom: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .offer-about .we-care .card-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .courses-student .top-courses h2 {
+    font-size: 30px;
+  }
+  .courses-student .courses-boxes {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .courses-student .courses-boxes .course-box .running-course .first-course .avilable {
+    padding: 0px;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  gap: 50px;
+  margin: auto;
+}
+footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+footer .social-media .social-networks i {
+  cursor: pointer;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  padding: 15px;
+}
+footer .social-media .social-networks i:hover {
+  background-color: rgb(246, 33, 75);
+}
+footer .footer-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-about .about-as {
+  width: 200px;
+}
+footer .footer-about .contact-us {
+  width: 200px;
+}
+footer .footer-about .Newsletter {
+  width: 200px;
+}
+footer .footer-about .Newsletter input {
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  footer .social-media {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer-about {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
